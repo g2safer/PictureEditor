@@ -1,0 +1,18 @@
+﻿<Window x:Class="PictureEditTool.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="PictureEditor" Height="450" Width="800">
+    <Grid Background="#FFEEECEA">
+        <Button Content="ファイル選択" HorizontalAlignment="Left" Margin="26,32,0,0" VerticalAlignment="Top" Width="116" Height="46" FontSize="18" Command="{Binding ChooseFileCommand}" Background="#FF88A2BB"/>
+        <Button Content="変換開始" HorizontalAlignment="Left" Margin="622,327,0,0" VerticalAlignment="Top" Width="144" Height="68" FontSize="20" Command="{Binding ConvertPicCommand}" Background="#FFCFE060"/>
+        <Label Content="変換元ファイル" HorizontalAlignment="Left" Margin="35,90,0,0" Height="28" Width="90" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="変換後ファイル" HorizontalAlignment="Left" Margin="35,177,0,0" Height="28" Width="90" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="InputFile" Content="{Binding InputFilePath}" HorizontalAlignment="Left" Margin="35,123,0,0" VerticalAlignment="Top" Height="29" Width="561.8" FontSize="14" BorderThickness="0" UseLayoutRounding="False" Background="#FFC9DCB9"/>
+        <Label x:Name="OutputFile" Content="{Binding OutputFilePath}" HorizontalAlignment="Left" Margin="35,210,0,0" VerticalAlignment="Top" Height="29" Width="562" FontSize="14" Background="#FFC9DCB9"/>
+        <ToggleButton Content="プレビュー" HorizontalAlignment="Left" Margin="622,123,0,0" VerticalAlignment="Top" Height="31" Width="84" FontSize="14" Background="#FFABBEC7"/>
+        <ToggleButton Content="プレビュー" HorizontalAlignment="Left" Margin="622,210,0,0" VerticalAlignment="Top" Height="31" Width="84" FontSize="14" Background="#FFABBEC7"/>
+    </Grid>
+</Window>
